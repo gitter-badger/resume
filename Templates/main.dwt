@@ -15,7 +15,7 @@
 		<link href="../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
 
 		<!-- Custom styles for this template -->
-		<link href="../assets/css/jumbotron-narrow.css" rel="stylesheet" />
+		<!--link href="../assets/css/jumbotron-narrow.css" rel="stylesheet" /-->
 		
 		<link href="../assets/css/timeliner/timeliner-future.css" rel="stylesheet"/>
 		<link href="../assets/css/vendor/venobox/venobox.css" rel="stylesheet"/>
