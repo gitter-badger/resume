@@ -167,34 +167,11 @@
 									</div>
 									<div class="row margin">	
 										<ol>
-											<li>
-												Cross-Enterprise Document Sharing (XDS)
-												<ul>
-													<li>Document Source</li>
-													<li>Document Consumer</li>
-												</ul>
-											</li>
-											<li>
-												Patient Identifier Cross-Referencing (PIX)													
-												<ul>
-													<li>PIX Source</li>
-													<li>PIX Manager</li>
-													<li>PIX Consumer</li>
-												</ul>
-											</li>
-											<li>
-												Patient Demographics Query (PDQ)																									
-												<ul>
-													<li>PDQ Supplier</li>
-													<li>PDQ Consumer</li>
-												</ul>
-											</li>
-											<li>
-												Consistent-Time(CT)																									
-												<ul>
-													<li>Time Client</li>
-												</ul>
-											</li>
+											<li>Cross-Enterprise Document Sharing (XDS)</li>
+											<li>Cross-enterprise Document Sharing for Imaging (XDS-I)</li>
+											<li>Patient Identifier Cross-Referencing (PIX)</li>
+											<li>Patient Demographics Query (PDQ)</li>
+											<li>Consistent-Time(CT)</li>
 										</ol>
 									</div>
 									<div class="row margin">	
@@ -217,6 +194,7 @@
 								<span class="tick tick-after"></span>
 								<dd class="timeline-event-content" id="_preMaster_2013EX">
 									<p>
+										&nbsp; &nbsp; &nbsp; &nbsp; 這個專案是要收集各個教師，在不同輔導類型下的輔導記錄，以作為教師評鑑統計/追朔之用。
 										<a target="_blank" href="assets/doc/輔導記錄登錄系統.pdf">報告書</a>
 									</p>       
 									<br/><br/><br/>                 
@@ -236,9 +214,9 @@
 									<div class="row margin">
 										<p>											
 											&nbsp; &nbsp; &nbsp; &nbsp; 是與台北醫學大學產學合作的計畫 - <strong>建立新世代個人化雲端健康記錄醫療資訊服務系統</strong>，主要建立醫療雲端服務，記錄每個人的健康記錄。 <br/><br/>
-											&nbsp; &nbsp; &nbsp; &nbsp; 我們遵照 <abbr title="Integrating the Healthcare Enterprise">IHE</abbr> 的規範實作，這次計畫完成的模組(系統角色)有 Cross-Enterprise Document Sharing (<abbr title="Cross-Enterprise Document Sharing">XDS</abbr>) 之中的 Repository, Registry，分別是分散儲存病歷 (健康記錄)、集中管理索引。<br/><br/>
-											&nbsp; &nbsp; &nbsp; &nbsp; 為什麼要遵照 IHE 規範? 在病歷(健康記錄) 交換常遇到不同廠商之間有不同交換規格/協定，對於醫院來說，招標廠商開發/維護都是很大的成本;遵照 IHE 規範的概念即是讓醫療系統模組能 "熱插拔" 每個廠商遵照標準的記錄內容、遵照相同的交換架構，讓系統之間的耦合降低，以達到可取代性、可擴充性。<br/><br/>
-											&nbsp; &nbsp; &nbsp; &nbsp; Connectathon (聯測) 是如何進行 ? 聯測之前會先請各廠商用規定的測試軟體測試系統，並且上傳結果，完成一定比例後，招集各廠商，若是 IHE-China，則到北京天壇醫院為期 5 天的測試，測試大會規定的 100、200項(視各廠報名的系統角色而定)的 Use Case，每個廠商扮演一個系統角色，必須與至少三家廠商扮演的不同角色連接測試。五天內完成所有項目，大會另選時間地點頒發證明。<br/><br/>
+											&nbsp; &nbsp; &nbsp; &nbsp; 我們遵照 <abbr title="Integrating the Healthcare Enterprise">IHE</abbr> 的規範實作，這次計畫完成的模組有 Cross-Enterprise Document Sharing (<abbr title="Cross-Enterprise Document Sharing">XDS</abbr>) 之中的 Repository, Registry，分別是病歷 (健康記錄)分散儲存、索引集中管理。<br/><br/>
+											&nbsp; &nbsp; &nbsp; &nbsp; 為什麼要遵照 IHE 規範? 在病歷(健康記錄) 交換常遇到不同廠商之間有不同交換規格/協定，對於醫院來說，招標系統廠商開發/維護都是很大的成本;遵照 IHE 規範的概念即是讓醫療系統模組能 "熱插拔" 每個廠商遵照標準的記錄內容、遵照相同的交換架構，讓系統之間的耦合降低，以達到可取代性、可擴充性。<br/><br/>
+											&nbsp; &nbsp; &nbsp; &nbsp; Connectathon (聯測) 是如何進行 ? 聯測之前會先請各廠商用規定的測試軟體測試系統，並且上傳結果，完成一定比例後，招集各廠商，若是 IHE-China，則到北京天壇醫院為期 5 天的測試，大會會規定的 100、200項(視各廠報名的系統角色而定)的 Use Case，每個廠商扮演一個系統角色，必須與至少三家廠商所扮演的不同角色連接測試。五天內完成所有項目，大會另選時間地點頒發證明。<br/><br/>
 										</p>
 									</div>
 									<div class="row margin">
@@ -334,17 +312,57 @@
 								<span class="tick tick-after"></span>
 								<dd class="timeline-event-content" id="_2010EX">
 									<ol>
-										<li>商務網站</li>
-										<li>校排球代表隊網站</li>
-									</ol>
+										<li><a href="#" data-toggle="modal" data-target="#qhome">商務網站</a></li>
+										<li><a href="#" data-toggle="modal" data-target="#tcuvbt">校排球代表隊網站</a></li>
+									</ol>			
+									<!-- Modal -->
+									<div class="modal fade" id="qhome" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+													<h4 class="modal-title" id="myModalLabel">商務網站</h4>
+												</div>
+												<div class="modal-body">
+													<div class="row">
+														<div class="col-lg-12">
+															<div class="text-center"><img src="assets/image/php/QHome_Taiwan/index.png" width="800px" /></div>
+															<div class="text-center"><img src="assets/image/php/QHome_Taiwan/member.png" width="800px" /></div>
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>	
+									<!-- Modal -->
+									<div class="modal fade" id="tcuvbt" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+										<div class="modal-dialog modal-lg">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+													<h4 class="modal-title" id="myModalLabel">排球代表隊網站</h4>
+												</div>
+												<div class="modal-body">
+													<div class="row">
+														<div class="col-lg-12">
+															<div class="text-center"><img src="assets/image/php/TCU_VollyBallTeam/tcuvbt (1).png" width="800px" /></div>
+															<div class="text-center"><img src="assets/image/php/TCU_VollyBallTeam/tcuvbt (2).png" width="800px" /></div>
+															<div class="text-center"><img src="assets/image/php/TCU_VollyBallTeam/tcuvbt (3).png" width="800px" /></div>
+															<div class="text-center"><img src="assets/image/php/TCU_VollyBallTeam/tcuvbt (4).png" width="800px" /></div>
+															<div class="text-center"><img src="assets/image/php/TCU_VollyBallTeam/tcuvbt (5).png" width="800px" /></div>
+														</div>
+													</div>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>		
 									<!--
-									<img src="assets/image/php/QHome_Taiwan/index.png" width="500px" />
-									<img src="assets/image/php/QHome_Taiwan/member.png" width="500px" />
-									<img src="assets/image/php/TCU_VollyBallTeam/tcuvbt (1).png" width="500px" />
-									<img src="assets/image/php/TCU_VollyBallTeam/tcuvbt (2).png" width="500px" />
-									<img src="assets/image/php/TCU_VollyBallTeam/tcuvbt (3).png" width="500px" />
-									<img src="assets/image/php/TCU_VollyBallTeam/tcuvbt (4).png" width="500px" />
-									<img src="assets/image/php/TCU_VollyBallTeam/tcuvbt (5).png" width="500px" />
 									-->
 									<span class="label label-primary">PHP</span>、
 									<span class="label label-primary">MySQL</span>
