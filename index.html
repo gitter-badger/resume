@@ -16,7 +16,11 @@
 
 		<!-- Custom styles for this template -->
 		<!--link href="../assets/css/jumbotron-narrow.css" rel="stylesheet" /-->
-		
+		<style>
+		  .container {
+			max-width: 800px;
+		  }
+		</style>
 		<link href="assets/css/timeliner/timeliner-future.css" rel="stylesheet"/>
 		<link href="assets/css/vendor/venobox/venobox.css" rel="stylesheet"/>
 		<!-- InstanceBeginEditable name="head" -->
@@ -32,7 +36,7 @@
 		<div class="header">
 			<ul class="nav nav-pills pull-right">
 			  <li><a href="index.html">Home</a></li>
-			  <li><a href="about.html">About Me</a></li>		  
+			  <li><a href="aboutMe.html">About Me</a></li>		  
 			  <li><a href="contact.html">Contact</a></li>
 			</ul>
 			<h3 class="text-muted"><a href="index.html">Gaduo's Resume</a></h3>
@@ -49,7 +53,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-3">			
+				<div class="col-md-4">			
 					<h4>學歷：</h4>
 					<dl>
 						<dt><h4> - 學士 (2008~2013)：</h4></dt>
@@ -110,7 +114,7 @@
 					<br/>
 					<br/>				
 				</div> 
-				<div class="col-md-9">	
+				<div class="col-md-8">	
 					<h4>作品/經歷：</h4>	
 					<div id="timeline" class="timeline-container">
 						<button class="timeline-toggle">+ expand all</button>
@@ -193,13 +197,20 @@
 								<dt id="_preMaster_2013"><a>2013, 輔導記錄登錄系統</a></dt>
 								<span class="tick tick-after"></span>
 								<dd class="timeline-event-content" id="_preMaster_2013EX">
-									<p>
-										&nbsp; &nbsp; &nbsp; &nbsp; 這個專案是要收集各個教師，在不同輔導類型下的輔導記錄，以作為教師評鑑統計/追朔之用。
-										<a target="_blank" href="assets/doc/輔導記錄登錄系統.pdf">報告書</a>
-									</p>       
-									<br/><br/><br/>                 
-									<span class="label label-primary">asp.net mvc4</span>、
-									<span class="label label-primary">MSSQL</span>
+									<div class="row margin">	
+										<p>
+											&nbsp; &nbsp; &nbsp; &nbsp; 提供一個平台，讓各個教師在輔導學生後，登錄輔導記錄，因各處室所需輔導單張不同，需要統整並將收集到的記錄內容，提供教師評鑑系統作為評鑑依據。											
+										</p>   
+									</div>
+									<div class="row margin">	
+										<ul>
+											<li>PDF：<a target="_blank" href="assets/doc/輔導記錄登錄系統.pdf">報告書</a></li>
+										</ul>
+									</div>
+									<div class="row margin">	                    
+										<span class="label label-primary">asp.net mvc4</span>、
+										<span class="label label-primary">MSSQL</span>
+									</div>
 									<!--br class="clear"-->
 								</dd><!-- /.timeline-event-content -->
 							</dl><!-- /.timeline-series -->
@@ -220,9 +231,11 @@
 										</p>
 									</div>
 									<div class="row margin">
-										GitHub，<a href="http://gaduo.github.io/IHE-IT-Infrastructure/" target="_blank">IHE-IT-Infrastructure</a><br/>
-										<a href="http://gaduo-chien-blog.logdown.com/categories/Integrating-the-Healthcare-Enterprise" target="_blank">Logdown 網誌說明 IHE 相關資訊</a><br/>
-										<a href="#" data-toggle="modal" data-target="#connectathon">聯測照片</a>
+										<ul>
+											<li>外部連結：GitHub，<a href="http://gaduo.github.io/IHE-IT-Infrastructure/" target="_blank">IHE-IT-Infrastructure</a></li>
+											<li>外部連結：<a href="http://gaduo-chien-blog.logdown.com/categories/Integrating-the-Healthcare-Enterprise" target="_blank">Logdown 網誌說明 IHE 相關資訊</a></li>
+											<li>照片：<a href="#" data-toggle="modal" data-target="#connectathon">聯測照片</a></li>
+										</ul>
 									</div>									
 									<!-- Modal -->
 									<div class="modal fade" id="connectathon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -265,18 +278,46 @@
 									</p>
 									<br class="clear">
 								</dd>--><!-- /.timeline-event-content -->
-							</dl><!-- /.timeline-series -->	
+							</dl><!-- /.timeline-series -->
 							<dl class="timeline-series">
 								<span class="tick tick-before"></span>
-								<dt id="_2012"><a href="#_2012_">2012, 邊做、邊說、邊記-隨身護理記錄輔助系統</a></dt>
+								<dt id="_2012"><a>2012, Google App Engine</a></dt>
 								<span class="tick tick-after"></span>
 								<dd class="timeline-event-content" id="_2012EX">
 									<div class="row margin">
 										<p>
-											&nbsp; &nbsp; &nbsp; &nbsp; 大學畢業專題，開發一套隨身護理記錄輔助系統，幫助護理人員在照護病人完畢後，可以利用說話的方式記錄護理記錄，使得護理記錄具有完整性並節省記錄的時間。
-											<a href="special_topic.html" >more ... </a>
-										</p>           
+											&nbsp; &nbsp; &nbsp; &nbsp; 在 GAE 作品之一「慈濟大學排球代表隊」是由先前 PHP 網頁改版而來，因為 GAE 提供免費而穩定的平台，所以移植到此。 <br/>
+											&nbsp; &nbsp; &nbsp; &nbsp; 除了代表隊網站還有像是「Facebook 文字遊戲」，或是「環島地圖」，用來記錄 GPS座標、照片、當下的心情寫照。 <br/>
+											&nbsp; &nbsp; &nbsp; &nbsp; GAE 是一個讓學生可以充分發揮作業的平台，有完整的 MVC 架構、Google 服務，能實現許多功能，使作品完整充實。
+										</p>  
 									</div>
+									<div class="row margin">
+										<ul>
+											<li>外部連結：<a href="http://tcu-vbt.appspot.com/" target="_blank">慈濟大學排球代表隊</a></li>
+											<li>外部連結：<a href="http://facebook-games.appspot.com/" target="_blank">Facebook 文字遊戲</a></li>
+											<li>外部連結：<a href="http://gaduo-chien.appspot.com/trip/" target="_blank">環島地圖</a></li>											
+										</ul>
+									</div>
+									<div class="row margin">
+										<span class="label label-primary">Google App Engine (Python)</span>、
+										<span class="label label-primary">Android</span>
+									</div>
+									<!--br class="clear"-->
+								</dd><!-- /.timeline-event-content -->
+							</dl><!-- /.timeline-series -->	
+							<dl class="timeline-series">
+								<span class="tick tick-before"></span>
+								<dt id="_2012_"><a>2012, 邊做、邊說、邊記-隨身護理記錄輔助系統</a></dt>
+								<span class="tick tick-after"></span>
+								<dd class="timeline-event-content" id="_2012_EX">
+									<div class="row margin">
+										<p>
+											&nbsp; &nbsp; &nbsp; &nbsp; 大學畢業專題，開發一套隨身護理記錄輔助系統，幫助護理人員在照護病人完畢後，可以利用說話的方式記錄護理記錄，使得護理記錄具有完整性並節省記錄的時間。											
+										</p>           										
+									</div>
+									<ul>
+										<li>連結：<a href="special_topic.html" >專題摘要</a></li>
+									</ul>   									
 									<div class="row margin">    
 										<span class="label label-primary">Java</span>、
 										<span class="label label-primary">Android</span>、
@@ -287,34 +328,62 @@
 									<!--br class="clear"-->
 								</dd><!-- /.timeline-event-content -->
 							</dl><!-- /.timeline-series -->
+							
 							<dl class="timeline-series">
 								<span class="tick tick-before"></span>
-								<dt id="_2011"><a>2011, Google App Engine</a></dt>
+								<dt id="_2011"><a>2011, Android 小專案</a></dt>
 								<span class="tick tick-after"></span>
 								<dd class="timeline-event-content" id="_2011EX">
 									<div class="row margin">
-										<p>
-											&nbsp; &nbsp; &nbsp; &nbsp; 在 GAE 作品之一 <a href="http://tcu-vbt.appspot.com/" target="_blank">慈濟大學排球代表隊</a> 是由先前 PHP 網頁改版而來，因為 GAE 提供免費而穩定的平台，所以移植到此。 <br/>
-											&nbsp; &nbsp; &nbsp; &nbsp; 除了代表隊網站還有像是 <a href="http://facebook-games.appspot.com/" target="_blank">Facebook 文字遊戲</a>，或是<a href="http://gaduo-chien.appspot.com/trip/" target="_blank">環島地圖</a>，用來記錄 GPS座標、照片、當下的心情寫照。 <br/>
-											&nbsp; &nbsp; &nbsp; &nbsp; GAE 是一個讓學生可以充分發揮作業的平台，有完整的 MVC 架構、Google 服務，能實現許多功能，使作品完整充實。
-										</p>  
+										<ul>
+											<li>外部連結：<a href="http://gaduo-chien-blog.logdown.com/posts/2014/03/20/translate-rice-cakes" target="_blank">翻譯蒟蒻</a></li>
+											<li>照片：<a href="#" data-toggle="modal" data-target="#ecg">心電圖</a></li>
+										</ul>   
+
+										<!-- Modal -->
+										<div class="modal fade" id="ecg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+											<div class="modal-dialog modal-lg">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+														<h4 class="modal-title" id="myModalLabel">心電圖</h4>
+													</div>
+													<div class="modal-body">
+														<div class="row">
+															<div class="col-lg-12">
+																<div class="text-center"><img src="assets/image/ecg/main.png" width="600px"/></div><br/>
+																<div class="text-center">圖1、主畫面</div><br/>
+																<div class="text-center"><img src="assets/image/ecg/ECG1.png" width="600px"/></div><br/>
+																<div class="text-center">圖2、心電圖-01</div><br/>
+																<div class="text-center"><img src="assets/image/ecg/ECG2.png" width="600px"/></div><br/>
+																<div class="text-center">圖3、心電圖-02</div><br/>
+															</div>
+														</div>
+													</div>
+													<div class="modal-footer">
+														<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+													</div>
+												</div>
+											</div>
+										</div>      
 									</div>
-									<div class="row margin">
-										<span class="label label-primary">Google App Engine (Python)</span>、
+									<div class="row margin">    
+										<span class="label label-primary">Java</span>、
 										<span class="label label-primary">Android</span>
+										<br class="clear">    
 									</div>
 									<!--br class="clear"-->
 								</dd><!-- /.timeline-event-content -->
 							</dl><!-- /.timeline-series -->
 							<dl class="timeline-series">
 								<span class="tick tick-before"></span>
-								<dt id="_2010"><a>2010, 自學 PHP (商務網頁、校排球代表隊網頁)，接觸 Android </a></dt>
+								<dt id="_2010"><a>2010, PHP 商務網頁、校排球代表隊網頁</a></dt>
 								<span class="tick tick-after"></span>
 								<dd class="timeline-event-content" id="_2010EX">
-									<ol>
-										<li><a href="#" data-toggle="modal" data-target="#qhome">商務網站</a></li>
-										<li><a href="#" data-toggle="modal" data-target="#tcuvbt">校排球代表隊網站</a></li>
-									</ol>			
+									<ul>
+										<li>照片：<a href="#" data-toggle="modal" data-target="#qhome">商務網站</a></li>
+										<li>照片：<a href="#" data-toggle="modal" data-target="#tcuvbt">校排球代表隊網站</a></li>
+									</ul>
 									<!-- Modal -->
 									<div class="modal fade" id="qhome" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 										<div class="modal-dialog modal-lg">
@@ -371,7 +440,7 @@
 							</dl><!-- /.timeline-series -->	
 							<dl class="timeline-series">
 								<span class="tick tick-before"></span>
-								<dt id="_2009"><a>2009, 計算機中心工讀生(至畢業)</a></dt>
+								<dt id="_2009"><a>2009, 電算中心工讀生(至畢業)</a></dt>
 								<span class="tick tick-after"></span>
 								<dd class="timeline-event-content" id="_2009EX">
 									<div class="row margin">
@@ -388,7 +457,7 @@
 									</div>
 									<div class="row margin">
 										<p>
-										&nbsp; &nbsp; &nbsp; &nbsp; 在計算機中心向大哥們學習如何架設 Server、維修電腦，若有心想學，大哥們都很願意分享自己的解決問題的經驗，每到周末也會一同騎單車出遊，每到期末還有聚餐，在這裡工作氣氛還不錯。
+										&nbsp; &nbsp; &nbsp; &nbsp; 在電算中心向大哥們學習如何架設 Server、維修電腦，若有心想學，大哥們都很願意分享自己的解決問題的經驗，每到周末也會一同騎單車出遊，每到期末還有聚餐，在這裡工作氣氛還不錯。
 										</p>
 									</div>
 									<!--br class="clear"-->
